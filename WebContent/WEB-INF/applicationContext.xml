@@ -1,0 +1,67 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<context:component-scan base-package="com.tradetraining" />
+	<mvc:annotation-driven />
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="prefix" value="/jsp/" />
+      <property name="suffix" value=".jsp" />
+   </bean>
+	
+
+	<bean id="loginDelegate" class="com.tradetraining.delegate.LoginDelegate">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="mainDelegate" class="com.tradetraining.delegate.MainDelegate">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean name="userDao" class="com.tradetraining.dao.UserDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean name="tickDataDao" class="com.tradetraining.dao.TickDataDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<bean name="tradeDao" class="com.tradetraining.dao.TradeDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<bean id="userService" class="com.tradetraining.service.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+
+	<bean id="tickDataService" class="com.tradetraining.service.TickDataServiceImpl">
+		<property name="tickDataDao" ref="tickDataDao"></property>
+	</bean>
+
+	<bean id="tradeService" class="com.tradetraining.service.TradeServiceImpl">
+		<property name="tradeDao" ref="tradeDao"></property>
+	</bean>
+	
+	<!-- 
+	<bean id="feedDataJsonServlet" class="com.tradetraining.data.FeedDataJsonServlet" />
+ -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/tradetraining?useSSL=false" />
+		<property name="username" value="root" />
+		<property name="password" value="" />
+	</bean>
+
+		
+</beans>
