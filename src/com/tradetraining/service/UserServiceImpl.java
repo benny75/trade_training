@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 import com.tradetraining.dao.TradeDao;
 import com.tradetraining.dao.UserDao;
-import com.tradetraining.data.QuoteData;
+import com.tradetraining.model.QuoteData;
 
 public class UserServiceImpl implements UserService
 {

@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.tradetraining.data.QuoteData;
-import com.tradetraining.data.Trade;
+import com.tradetraining.model.QuoteData;
+import com.tradetraining.model.Trade;
 import com.tradetraining.delegate.MainDelegate;
 import com.tradetraining.service.TickDataService;
 import com.tradetraining.service.TradeService;

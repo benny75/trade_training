@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import com.tradetraining.dao.TickDataDao;
-import com.tradetraining.data.Tick;
+import com.tradetraining.model.Tick;
 
 public class TickDataServiceImpl implements TickDataService{
 

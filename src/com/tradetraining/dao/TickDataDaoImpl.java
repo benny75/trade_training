@@ -11,7 +11,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import com.tradetraining.data.Tick;
+import com.tradetraining.model.Tick;
 
 public class TickDataDaoImpl implements  TickDataDao{
 

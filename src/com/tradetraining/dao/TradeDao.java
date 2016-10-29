@@ -3,7 +3,7 @@ package com.tradetraining.dao;
 import java.sql.SQLException;
 import java.util.List;
 
-import com.tradetraining.data.Trade;
+import com.tradetraining.model.Trade;
 
 /**
  * @author Benny Wong

@@ -4,7 +4,7 @@ package com.tradetraining.service;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
 
-import com.tradetraining.data.QuoteData;
+import com.tradetraining.model.QuoteData;
 
 /**
  * @author Benny Wong

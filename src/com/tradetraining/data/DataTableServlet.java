@@ -23,6 +23,7 @@ import com.google.visualization.datasource.datatable.DataTable;
 import com.google.visualization.datasource.datatable.TableCell;
 import com.google.visualization.datasource.datatable.TableRow;
 import com.google.visualization.datasource.datatable.value.DateTimeValue;
+import com.tradetraining.model.Tick;
 import com.tradetraining.service.TickDataService;
 
 public class DataTableServlet extends HttpServlet implements HttpRequestHandler{

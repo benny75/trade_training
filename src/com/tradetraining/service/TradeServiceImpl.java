@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.tradetraining.dao.TradeDao;
-import com.tradetraining.data.Trade;
+import com.tradetraining.model.Trade;
 
 public class TradeServiceImpl implements TradeService{
 

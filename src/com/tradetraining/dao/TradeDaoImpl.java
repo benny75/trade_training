@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.tradetraining.data.Trade;
+import com.tradetraining.model.Trade;
 import com.tradetraining.service.TickDataService;
 
 /**

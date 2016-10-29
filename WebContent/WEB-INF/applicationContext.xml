@@ -58,9 +58,9 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/tradetraining?useSSL=false" />
-		<property name="username" value="root" />
-		<property name="password" value="" />
+			value="jdbc:mysql://slb.c6sm7ibia7c4.us-west-2.rds.amazonaws.com:3306/tradetraining?useSSL=false" />
+		<property name="username" value="slbRoot" />
+		<property name="password" value="8YU-RNu-AM5-SQx" />
 	</bean>
 
 		

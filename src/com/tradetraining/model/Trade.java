@@ -1,4 +1,4 @@
-package com.tradetraining.data;
+package com.tradetraining.model;
 
 import java.time.LocalDateTime;
 

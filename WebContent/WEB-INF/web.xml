@@ -21,7 +21,7 @@
 
 	<servlet-mapping>
 		<servlet-name>Trade Training</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/main</url-pattern>
 	</servlet-mapping>
 
 <!--
